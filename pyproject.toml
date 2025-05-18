@@ -1,0 +1,121 @@
+[build-system]
+requires = ["setuptools>=75.2.0,<76.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.package-data]
+"verifia" = ["generation/ui/assets/*.css"]
+
+[tool.setuptools.packages.find]
+include = ["verifia*"]
+exclude = ["tests*"]
+
+[project.urls]
+"Homepage" = "https://www.verifia.ca/"
+"Source Code" = "https://github.com/VerifIA/verifia"
+"Documentation" = "https://docs.verifia.ca/"
+
+[project]
+name = "verifia"
+version = "0.1.0"
+description = "VerifIA is an open-source AI testing framework for domain‑aware verification of AI models during the staging phase—before deployment."
+readme = "README.md"
+requires-python = ">=3.7,<4.0"
+license = { file = "LICENSE" }
+authors = [
+  { name = "Houssem Ben Braiek", email = "h.benbraiek@verifia.ca" },
+  { name = "Ahmed Haj Yahmed", email = "a.hajyahmed@verifia.ca" }
+]
+keywords = [
+  "Artificial Intelligence", "Machine Learning", "Quality", "MLOps"
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "Intended Audience :: Science/Research",
+  "Operating System :: OS Independent",
+  "License :: OSI Approved :: GNU Affero General Public License v3",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+dependencies = [
+  "cloudpickle>=3.1.1,<4.0.0",
+  "numpy>=1.26.0,<3.0.0",
+  "scikit-learn>=1.6.1,<2.0.0",
+  "scipy>=1.11.4,<2.0.0",
+  "pandas>=2.2.2,<2.3.0",
+  "setuptools>=75.2.0",
+  "python-dotenv>=1.1.0,<2.0.0",
+  "pyyaml>=6.0.2,<7.0.0",
+  "matplotlib>=3.10.0,<4.0.0",
+  "plotly>=5.24.1,<7.0.0",
+  "ipython>=7.34.0,<10.0.0",
+  "ipywidgets>=7.7.1,<9.0.0",
+  "tqdm>=4.67.1,<5.0.0",
+  "python-fasthtml>=0.12.14,<0.13.0",
+  "tabulate>=0.9.0,<1.0.0",
+  "pypdf>=5.4.0,<6.0.0",
+]
+
+[project.optional-dependencies]
+test = [
+  "pytest>=7.0",
+  "pytest-cov",
+]
+dev = [
+  "black",
+  "isort",
+  "mypy",
+]
+catboost     = ["catboost>=1.2.8,<2.0.0"]
+lightgbm     = ["lightgbm>=4.6.0,<5.0.0"]
+xgboost      = ["xgboost>=3.0.0,<4.0.0"]
+torch        = ["torch>=2.6.0,<3.0.0"]
+tensorflow   = ["tensorflow>=2.18.0,<3.0.0"]
+mlflow       = ["mlflow>=2.21.3,<3.0.0"]
+comet_ml     = ["comet_ml>=3.49.8,<4.0.0"]
+wandb        = ["wandb>=0.19.10,<1.0.0"]
+genflow      = [
+  "chromadb>=1.0.6,<2.0.0",
+  "langgraph>=0.3.31,<1.0.0",
+  "langchain>=0.3.24,<0.4.0",
+  "langchain_experimental>=0.3.4,<1.0.0",
+  "langchain_community>=0.3.22,<1.0.0",
+  "langchain_openai>=0.3.14,<1.0.0",
+  "gradio>=5.29.0,<6.0.0",
+]
+# “all” brings in *every* optional extra
+all = [
+  # testing & linting
+  "pytest>=7.0",
+  "pytest-cov",
+  "black",
+  "isort",
+  "mypy",
+  # boosted learners
+  "catboost>=1.2.8,<2.0.0",
+  "lightgbm>=4.6.0,<5.0.0",
+  "xgboost>=3.0.0,<4.0.0",
+  # deep‑learning
+  "torch>=2.6.0,<3.0.0",
+  "tensorflow>=2.18.0,<3.0.0",
+  # experiment tracking
+  "mlflow>=2.21.3,<3.0.0",
+  "comet_ml>=3.49.8,<4.0.0",
+  "wandb>=0.19.10,<1.0.0",
+  # domain‑flow extras
+  "chromadb>=1.0.6,<2.0.0",
+  "langgraph>=0.3.31,<1.0.0",
+  "langchain>=0.3.24,<0.4.0",
+  "langchain_experimental>=0.3.4,<1.0.0",
+  "langchain_community>=0.3.22,<1.0.0",
+  "langchain_openai>=0.3.14,<1.0.0",
+  "gradio>=5.29.0,<6.0.0",
+]

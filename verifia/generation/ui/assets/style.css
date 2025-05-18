@@ -1,0 +1,31 @@
+.yaml-card, .controls-card {
+  background: white;
+  border-radius: 8px;
+  padding: 1em;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.header-row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1em;
+  margin-bottom: 0.5em;
+}
+.logo-img img {
+  max-height: 40px;
+}
+.title-col {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+.title-text {
+  font-size: 1.75em;
+  font-weight: 600;
+  margin: 0;
+}
+.footer {
+  font-size: 0.85em;
+  color: #555;
+  margin-top: 1.5em;
+}

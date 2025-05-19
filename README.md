@@ -31,7 +31,7 @@ It generates novel, in‑domain inputs and checks your model against expert‑de
 
 ## 📖 Try in Colab
 
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/VerifIA/verifia/blob/main/notebooks/quickstart.ipynb)
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1weSpSyNzEEVFuzkeiEkJVBQjsC9KBIE_?usp=sharing)
 
 ---
 

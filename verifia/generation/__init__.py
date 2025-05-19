@@ -8,6 +8,6 @@ try:
 except ImportError as e:
     raise ImportError(
         "To use AI generation you must install with extra genflow: "
-        "`pip install verifia[torch]`"
+        "`pip install verifia[genflow]`"
     ) from e
 from .flows import DomainGenFlow

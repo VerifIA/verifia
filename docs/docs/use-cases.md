@@ -21,12 +21,13 @@ Verify a TensorFlow regression model trained on concrete compressive strength da
 - Manual & AI‑powered domain generation  
 - Rule‑based verification with *VerifIA*  
 
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1Nsxkw2t29R7E9mBRT2tZmS_cP1cWOcno?usp=sharing)
+
 **Artifacts:**
 
-- [Dataset (CSV)](data/compressive_strength.csv)  
-- [Application-specific docs (PDF)](documents/compressive_strength/)  
-- [Domain YAML](domains/compressive_strength.yaml)  
-- [Notebook](notebooks/compressive_strength.ipynb)  
+- [Dataset (CSV)](https://www.verifia.ca/assets/use-cases/data/concrete_compressive_strength.csv)  
+- [Domain YAML](https://www.verifia.ca/assets/use-cases/domains/concrete_compressive_strength.yaml)  
+- [Application-specific docs (Zipped PDFs)](https://www.verifia.ca/assets/use-cases/documents/concrete_compressive_strength.zip)   
 
 ---
 
@@ -39,12 +40,13 @@ Verify a CatBoost regression model forecasting house prices. You will learn:
 - Loading or generating a domain config  
 - Verifying rule‑consistency with *VerifIA*  
 
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/11wzH3sDB7NesU5d_6GKmL2xNqqCA8AzA?usp=sharing)
+
 **Artifacts:**
 
-- [Dataset (CSV)](data/house_pricing.csv)  
-- [Application-specific docs (PDF)](documents/house_pricing/)  
-- [Domain YAML](domains/house_pricing.yaml)  
-- [Notebook](notebooks/house_pricing.ipynb)  
+- [Dataset (CSV)](https://www.verifia.ca/assets/use-cases/data/house_price.csv)  
+- [Domain YAML](https://www.verifia.ca/assets/use-cases/domains/house_price.yaml)  
+- [Application-specific docs (Zipped PDFs)](https://www.verifia.ca/assets/use-cases/documents/house_price.zip)  
 
 ---
 
@@ -59,13 +61,14 @@ Verify a Scikit‑Learn pipeline (SVC & Random Forest) for predicting hotel canc
 - Wrapping via `SKLearnModel`  
 - Domain config & rule‑consistency verification  
 
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1zp1wOd7BiYW65GI0FAGRjMj4LwruXXYB?usp=sharing)
+
 **Artifacts:**
 
-- [Dataset (CSV)](data/hotel_cancel.csv)  
-- [Application-specific docs (PDF)](documents/hotel_cancel/)  
-- [Domain YAML](domains/hotel_cancel.yaml)  
-- [Notebook](notebooks/hotel_cancel.ipynb)  
-
+- [Dataset (CSV)](https://www.verifia.ca/assets/use-cases/data/hotel_cancellation.csv)  
+- [Domain YAML](https://www.verifia.ca/assets/use-cases/domains/hotel_cancellation.yaml) 
+- [Application-specific docs (Zipped PDFs)](https://www.verifia.ca/assets/use-cases/documents/hotel_cancellation.zip)  
+ 
 ---
 
 ### 4. Loan Eligibility Classification (XGBoost)
@@ -77,13 +80,14 @@ Verify an XGBoost classifier for loan repayment prediction. In this example you 
 - Generate or load domain configurations  
 - Run rule‑consistency checks  
 
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1R8y2YSBLkUWcA25jt8cORY9cy5oLd7_m?usp=sharing)
+
 **Artifacts:**
 
-- [Dataset (CSV)](data/loan_eligibility.csv)  
-- [Application-specific docs (PDF)](documents/loan_eligibility/)  
-- [Domain YAML](domains/loan_eligibility.yaml)  
-- [Notebook](notebooks/loan_eligibility.ipynb)  
-
+- [Dataset (CSV)](https://www.verifia.ca/assets/use-cases/data/loan_eligibility.csv)  
+- [Domain YAML](https://www.verifia.ca/assets/use-cases/domains/loan_eligibility.yaml)  
+- [Application-specific docs (Zipped PDFs)](https://www.verifia.ca/assets/use-cases/documents/loan_eligibility.zip)  
+ 
 ---
 
 ## Why Use Cases?

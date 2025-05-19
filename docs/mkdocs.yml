@@ -103,12 +103,14 @@ nav:
     - Domain: concepts/domain.md
     - Searcher: concepts/searcher.md
     - Run: concepts/run.md
+    - Domain Genflow: concepts/domain-genflow.md
   - Tutorials:
     - tutos/index.md
     - Rule-Based Model Verification: tutos/tuto_1.md
     - Manual vs. AI-Generated Domain: tutos/tuto_2.md
   - Guides:
     - Manual Domain Creation: guides/creating-a-domain.md
+    - AI for Domain Generation: guides/ai-for-domain-generation.md
   - Community:
     - community/index.md
     - Reporting a bug: community/reporting-a-bug.md
@@ -120,3 +122,4 @@ nav:
     - Model: reference/model.md
     - Rule Consistency Verifier: reference/verifier.md
     - Rules Violation Result: reference/result.md
+    - Domain Genflow: reference/genflow.md

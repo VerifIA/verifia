@@ -42,7 +42,7 @@ It generates novel, in‑domain inputs and checks your model against expert‑de
 pip install verifia
 
 # Include AI‑Based Domain Generation
-pip install verifia[domain]
+pip install verifia[genflow]
 ```
 
 Supports Python 3.10+.

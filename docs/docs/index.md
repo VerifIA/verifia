@@ -1,6 +1,6 @@
 # VerifIA
 
-*VerifIA* is an open-source Artificial Intelligence (AI) testing framework for **domain‑aware verification** of AI models during the staging phase—before deployment.
+*VerifIA* is an open-source AI testing framework for **domain‑aware verification** of machine‑learning models during the staging phase—before deployment.
 
 > **Definition:** The <u>staging phase</u> encompasses model training on the training set, hyperparameter tuning on the validation set, and performance evaluation on the test set. During this phase, models must satisfy domain-specific requirements and regulatory standards before advancing to production.
 
@@ -63,7 +63,26 @@ Even rare but catastrophic AI failures—whether due to distributional shifts, s
 
 ---
 
-## (Preview) AI‑Powered Domain Generation
+## AI‑Powered Domain Generation
+
+<details>
+  <summary>🚀 Preview: VerifIA Domain Spec Generator UI</summary>
+
+  <center>
+    <figure>
+      <img
+        src="https://www.verifia.ca/assets/generation/UI.gif"
+        alt="VerifIA Domain Spec Generator UI in action"
+        title="Interactive Domain Spec Generator Demo"
+        width="85%"
+        loading="lazy"
+        decoding="async"
+      />
+      <figcaption><em>Fig. 1:</em> Real‑time domain YAML generation & validation.</figcaption>
+    </figure>
+  </center>
+
+</details>
 
 Forget manual YAML editing—*VerifIA* can **auto‑draft your entire domain spec** in minutes. 
 
@@ -73,17 +92,19 @@ Using LangChain‑compatible LLMs, it ingests:
 - **Your documentation** (PDFs, or vectordb)  
 - **Your model card** (YAML file or dict)
 
-…and outputs a ready‑to‑use domain YAML with:
+It then generates a ready‑to‑use `domain.yaml` that includes:
 
 1. **Variable definitions** (types, real‑world ranges)  
 2. **Feasibility constraints** (inter‑feature formulas)  
 3. **Behavioral rules** (premises → conclusions)  
 
-Simply point VerifIA at your files and let the AI:
-
-- Extract feature metadata  
-- Infer domain logic from docs  
-- Generate draft rules you can review and refine  
+!!! tip "Human‑in‑the‑Loop Experience"
+    Through the built‑in Gradio interface, you can:
+    
+    - **Review** the AI‑drafted spec side‑by‑side.  
+    - **Edit** any section inline.  
+    - **Regenerate** specific parts on demand.  
+    - **Validate** against your schema before export. 
 
 👉 Dive into the [AI‑Based Domain Generation Guide](guides/domain-generation/overview.md) for a full walkthrough.  
 

@@ -8,11 +8,11 @@
 
   [![GitHub release](https://img.shields.io/github/v/release/VerifIA/verifia.svg)](https://github.com/VerifIA/verifia/releases)
   [![License](https://img.shields.io/badge/license-AGPL--3.0-blue.svg)](https://github.com/VerifIA/verifia/blob/main/LICENSE)
-  [![Docs](https://img.shields.io/badge/docs-latest-blue.svg)](https://docs.verifia.ai)
+  [![Docs](https://img.shields.io/badge/docs-latest-blue.svg)](https://docs.verifia.ca)
 
 </div>
 <h3 align="center">
-   <a href="https://docs.verifia.ai/index.html"><b>Docs</b></a> &bull;
+   <a href="https://docs.verifia.ca"><b>Docs</b></a> &bull;
   <a href="https://www.verifia.ca"><b>Website</b></a>
  </h3>
 <br />
@@ -35,15 +35,6 @@ It generates novel, in‑domain inputs and checks your model against expert‑de
 
 ---
 
-## 📸 Result Preview [TBD]
-
-[TBD: ADD TEXT HERE]
-<p align="center">
-  <img src="https://raw.githubusercontent.com/VerifIA/verifia/main/assets/report_preview.png" alt="Verification report preview" width="600">
-</p>
-
----
-
 ## 🚀 Install
 
 ```bash
@@ -51,7 +42,7 @@ It generates novel, in‑domain inputs and checks your model against expert‑de
 pip install verifia
 
 # Include AI‑Based Domain Generation
-pip install verifia[domain]
+pip install verifia[genflow]
 ```
 
 Supports Python 3.10+.
@@ -81,12 +72,12 @@ report.save_as_html("verification_report.html")
 
 ### Quickstart Steps
 
-- **Install**: [docs.verifia.ai/quickstart#install](https://docs.verifia.ai/quickstart#install)  
-- **Prepare Your Components** (Domain, Model, Data): [#prepare-your-components](https://docs.verifia.ai/quickstart#prepare-your-components)  
-- **Run Verification**: [#run-a-verification](https://docs.verifia.ai/quickstart#run-a-verification)  
-- **Inspect Results**: [#inspecting-results](https://docs.verifia.ai/quickstart#inspecting-results)  
+- **Install**: [install](https://docs.verifia.ca/quickstart/#1-install)  
+- **Prepare Your Components** (Domain, Model, Data): [prepare-your-components](https://docs.verifia.ca/concepts/#2-prepare-your-components)  
+- **Run Verification**: [run-a-verification](https://docs.verifia.ca/quickstart/#3-run-a-verification)  
+- **Inspect Results**: [inspecting-results](https://docs.verifia.ca/quickstart/#4-inspecting-results)  
 
-👉 **Full Quickstart guide**: https://docs.verifia.ai/quickstart
+👉 **Full Quickstart guide**: https://docs.verifia.ca/quickstart
 
 ---
 
@@ -95,12 +86,38 @@ report.save_as_html("verification_report.html")
 Automatically build your domain specification from CSVs, DataFrames, and PDFs using LLM‑powered agents. 
 No manual rule‑writing required—point VerifIA at your data and let it generate variables, constraints, and rules for you.
 
+<details style="border:1px solid #ddd; border-radius:8px; background:#fff; padding:1em; margin:1.5em 0; box-shadow:0 2px 8px rgba(0,0,0,0.05);">
+  <summary style="font-size:1.15em; font-weight:500; color:#333; cursor:pointer;">
+    🎬 Demo: AI‑Based Domain Generation UI
+  </summary>
+  <div style="text-align:center; margin-top:1em;">
+    <a href="https://www.verifia.ca/assets/generation/UI.gif" target="_blank" rel="noopener">
+      <div style="display:inline-block; position:relative; overflow:hidden; border-radius:6px;">
+        <img
+          src="https://www.verifia.ca/assets/generation/UI.gif"
+          alt="AI‑Based Domain Generation UI"
+          title="Click to view full‑size animation"
+          width="80%"
+          loading="lazy"
+          decoding="async"
+          style="display:block;"
+        />
+        <span style="position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); font-size:3em; color:rgba(255,255,255,0.8); pointer-events:none;">
+          ▶️
+        </span>
+      </div>
+    </a>
+    <p style="margin:0.75em 0 0; font-size:0.9em; color:#555;">
+      <em>Fig.</em> Interactive animated demo—click to open full resolution.
+    </p>
+  </div>
+</details>
+
 ### 📖 Learn More
 
-- **Prerequisites & Setup**: [#environment-setup](https://docs.verifia.ai/guides/ai-domain-generation/usage#environment-setup)  
-- **Prepare Inputs**: [#prepare-your-inputs](https://docs.verifia.ai/guides/ai-domain-generation/usage#prepare-your-inputs)  
-- **Run Generation**: [#run-domain-generation](https://docs.verifia.ai/guides/ai-domain-generation/usage#run-domain-generation)  
-- **Review & Integrate**: [#review--refine](https://docs.verifia.ai/guides/ai-domain-generation/usage#review--refine) & [#integrate-into-verification-pipeline](https://docs.verifia.ai/guides/ai-domain-generation/usage#integrate-into-verification-pipeline)
+- **Prerequisites & Setup**: [#environment-setup](https://docs.verifia.ca/quickstart)  
+- **Prepare Domain Spec**: [#prepare-your-domain](https://docs.verifia.ca/guides/creating-a-domain/)  
+- **Run Generation**: [#run-domain-generation](https://docs.verifia.ca/guides/ai-for-domain-generation/)
 
 ---
 
@@ -125,18 +142,18 @@ VerifIA works with any model, in any environment and integrates seamlessly with 
 
 ---
 
-## 📖 Learn More
+## 📖 More Resources
 
-- **Documentation**: https://docs.verifia.ai  
+- **Documentation**: https://docs.verifia.ca
 - **Website**: https://verifia.ca 
 - **Source Code**: https://github.com/VerifIA/verifia  
-- **Contact**: [contact@verifia.ai](mailto:contact@verifia.ai)
+- **Contact**: [contact@verifia.ca](mailto:contact@verifia.ca)
 
 ---
 
 ## 🤝 Contributing
 
-We welcome all contributions! Please read our [CONTRIBUTING.md](CONTRIBUTING.md) to get started.
+We welcome all contributions! Please read our [CONTRIBUTING.md](https://github.com/VerifIA/verifia/blob/main/CONTRIBUTING.md) to get started.
 
 ---
 

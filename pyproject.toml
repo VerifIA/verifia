@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 include-package-data = true
 
 [tool.setuptools.package-data]
-"verifia" = ["generation/ui/assets/*.css"]
+"verifia" = ["generation/ui/assets/*.css", "assets/*.gif"]
 
 [tool.setuptools.packages.find]
 include = ["verifia*"]
@@ -19,14 +19,18 @@ exclude = ["tests*"]
 
 [project]
 name = "verifia"
-version = "0.1.0"
+version = "0.1.0rc0"
 description = "VerifIA is an open-source AI testing framework for domain‑aware verification of AI models during the staging phase—before deployment."
 readme = "README.md"
 requires-python = ">=3.7,<4.0"
 license = { file = "LICENSE" }
+# Emails are omitted from author list due to PyPI display issue https://github.com/pypi/warehouse/issues/12877
 authors = [
-  { name = "Houssem Ben Braiek", email = "h.benbraiek@verifia.ca" },
-  { name = "Ahmed Haj Yahmed", email = "a.hajyahmed@verifia.ca" }
+  { name = "Houssem Ben Braiek" },
+  { name = "Ahmed Haj Yahmed" }
+]
+maintainers = [
+    { name = "verifia", email = "contact@verifia.ai" },
 ]
 keywords = [
   "Artificial Intelligence", "Machine Learning", "Quality", "MLOps"

@@ -21,7 +21,7 @@ Follow these steps to install VerifIA, wrap your model, define your domain, and 
 === "Extras: AI‑Based Domain Generation"
        ```bash
        # For VerifIA to generate your domain spec, install the extra dependencies:
-       pip install verifia[domain]
+       pip install verifia[genflow]
        ```
 
 ---
@@ -118,9 +118,28 @@ report.save_as_html("verification_report.html")
 
 ---
 
-### 5. AI-Generated Domain (Preview)
+### 5. AI-Generated Domain
 
 Don’t hand‑craft YAML by hand—let *VerifIA*’s `DomainGenFlow` do it for you in minutes. Point it at your data, docs, and model card, and you’ll get a complete domain spec ready to verify.
+
+<details style="border:1px solid #ddd; border-radius:6px; background:#fafafa; padding:0.75em; margin:1em 0;">
+  <summary style="font-weight:500; cursor:pointer;">🚀 Launch the Gradio Domain Spec Generator</summary>
+  <div align="center" style="margin-top:0.75em;">
+    <img
+      src="https://www.verifia.ca/assets/generation/UI.gif"
+      alt="Domain Spec Generator UI"
+      width="80%"
+      loading="lazy"
+      decoding="async"
+      style="border-radius:4px; box-shadow:0 4px 10px rgba(0,0,0,0.1);"
+    />
+    <p style="font-size:0.9em; color:#555; margin-top:0.5em;">
+      <em>Fig.</em> Human‑in‑the‑loop draft → edit → validate via Gradio UI.
+    </p>
+  </div>
+</details>
+
+Spin up the full **Gradio** interface with a single call:
 
 ```python
 from verifia.generation import DomainGenFlow
@@ -131,24 +150,23 @@ flow.load_ctx(
     pdfs_dirpath="docs/domain_pdfs/",        # or db_str_content / vectordb
     model_card_fpath="model_card.yaml"       # or model_card=dict(...)
 )
-domain_cfg = flow.run(
-    save=True,
-    local_path="domains/generated_domain.yaml"
-)
+# 4) Launch the interactive UI
+flow.launch()
 ```
 
 **What it does:**
 
-With a single `run()` call, *VerifIA*’s `DomainGenFlow` will:
+Behind the scenes, *VerifIA*’s `DomainGenFlow` will:
 
 * Extract feature metadata via DataFrame agents
 * Infer constraints & rules from your documents via retriever agents
 * Draft a fully‑formed YAML containing:
        * **Variables** (types, ranges)
        * **Constraints** (inter‑feature formulas)
-       * **Rules** (premises → conclusions)
+       * **Rules** (premises → conclusions)
+* Let you **review**, **edit**, and **regenerate** any section before exporting
 
-Review, Refine, and then, Feed `domain_cfg` directly into `RuleConsistencyVerifier` or Save it as `generated_domain.yaml`.
+Review, Refine, and then, Feed `domain_cfg_path` directly into `RuleConsistencyVerifier` or Save it as `generated_domain.yaml`.
 
 ## Quick Links
 

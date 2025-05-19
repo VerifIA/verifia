@@ -1,0 +1,122 @@
+# Project information
+site_name: "VerifIA Docs"
+# Repository
+repo_url: https://github.com/VerifIA/verifia 
+repo_name: VerifIA/verifia 
+# Copyright
+copyright: Copyright &copy; 2025 VerifIA
+theme:
+  name: material
+  logo: assets/logo-white.png
+  font:
+    text: Roboto
+    code: Roboto Mono
+  favicon: assets/icon.png
+  features:
+    - navigation.footer
+    - navigation.indexes
+    - navigation.sections
+    - navigation.tabs
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+  palette:
+    # Dark Mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Dark mode
+      primary: indigo
+      accent: indigo
+
+    # Light Mode
+    - scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Light mode
+      primary: indigo
+      accent: indigo
+
+plugins:
+- search
+- mkdocstrings:
+    default_handler: python
+    handlers:
+      python:
+        options:
+          show_source: false
+          heading_level: 2
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/squidfunk
+    - icon: fontawesome/brands/docker
+      link: https://hub.docker.com/r/squidfunk/mkdocs-material/
+    - icon: fontawesome/brands/python
+      link: https://pypi.org/project/mkdocs-material/
+    - icon: fontawesome/brands/mastodon
+      link: https://fosstodon.org/@squidfunk
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/squidfunk
+
+markdown_extensions:
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+            - name: mermaid
+              class: mermaid
+              format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - admonition
+  - pymdownx.details
+  - md_in_html
+
+nav:
+  - Getting Started: 
+    - Getting Started: index.md
+    - Quickstart: quickstart.md
+    - Concepts: concepts/index.md
+    - Tutorials: tutos/index.md
+    - Use Cases: use-cases.md
+    - Enterprise feedback: enterprise-support.md
+    - License: license.md
+  - Concepts:
+    - concepts/index.md
+    - Data: concepts/data.md
+    - Model: concepts/model.md
+    - Domain: concepts/domain.md
+    - Searcher: concepts/searcher.md
+    - Run: concepts/run.md
+  - Tutorials:
+    - tutos/index.md
+    - Rule-Based Model Verification: tutos/tuto_1.md
+    - Manual vs. AI-Generated Domain: tutos/tuto_2.md
+  - Guides:
+    - Manual Domain Creation: guides/creating-a-domain.md
+  - Community:
+    - community/index.md
+    - Reporting a bug: community/reporting-a-bug.md
+    - Reporting a docs issue: community/reporting-a-docs-issue.md
+    - Requesting a change: community/requesting-a-change.md
+    - Making a pull request: community/making-a-pull-request.md
+  - API Reference:
+    - Dataset: reference/dataset.md
+    - Model: reference/model.md
+    - Rule Consistency Verifier: reference/verifier.md
+    - Rules Violation Result: reference/result.md

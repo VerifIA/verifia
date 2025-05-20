@@ -6,7 +6,6 @@
 
 <div align="center">
 
-  [![GitHub release](https://img.shields.io/github/v/release/VerifIA/verifia.svg)](https://github.com/VerifIA/verifia/releases)
   [![License](https://img.shields.io/badge/license-AGPL--3.0-blue.svg)](https://github.com/VerifIA/verifia/blob/main/LICENSE)
   [![Docs](https://img.shields.io/badge/docs-latest-blue.svg)](https://docs.verifia.ca)
 

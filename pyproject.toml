@@ -30,7 +30,7 @@ authors = [
   { name = "Ahmed Haj Yahmed" }
 ]
 maintainers = [
-    { name = "verifia", email = "contact@verifia.ai" },
+    { name = "verifia", email = "contact@verifia.ca" },
 ]
 keywords = [
   "Artificial Intelligence", "Machine Learning", "Quality", "MLOps"

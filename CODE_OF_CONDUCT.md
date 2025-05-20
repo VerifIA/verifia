@@ -18,7 +18,7 @@ Unacceptable behaviors include:
 - Publishing private information without permission  
 
 ## Enforcement
-If you experience or witness unacceptable behavior, please report it by contacting our team at [contact@verifia.ai](mailto:contact@verifia.ai). All reports will be kept confidential. Project maintainers will review and respond promptly.
+If you experience or witness unacceptable behavior, please report it by contacting our team at [contact@verifia.ca](mailto:contact@verifia.ai). All reports will be kept confidential. Project maintainers will review and respond promptly.
 
 Maintainers reserve the right to remove or edit comments, commits, issues, and pull requests that violate this Code of Conduct.
 

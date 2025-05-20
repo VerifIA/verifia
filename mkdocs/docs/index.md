@@ -1,10 +1,15 @@
+<div align="center">
+  <p>
+    <a href="https://semla.polymtl.ca/" target="_blank">
+    <img style="border-radius:13px; width:100%; height:auto;" src="https://www.verifia.ca/assets/banner.png" alt="VerifIA x SEMLA banner"></a>
+  </p>
+</div>
+
 # VerifIA
 
 *VerifIA* is an open-source AI testing framework for **domain‑aware verification** of machine‑learning models during the staging phase—before deployment.
 
 > **Definition:** The <u>staging phase</u> encompasses model training on the training set, hyperparameter tuning on the validation set, and performance evaluation on the test set. During this phase, models must satisfy domain-specific requirements and regulatory standards before advancing to production.
-
-* **Source Code:** [github.com/VerifIA/verifia](https://github.com/VerifIA/verifia)
 
 Fundamentally, *VerifIA* automates a structured sequence of verifications to assess model consistency with domain knowledge. At the end of each run, it generates a validation report to:
 
@@ -24,8 +29,8 @@ Even rare but catastrophic AI failures—whether due to distributional shifts, s
 *VerifIA* brings **domain‑aware model verification** to your staging pipeline:
 
 1. **Seamless Integration**  
-    - **Model frameworks:** [scikit‑learn](https://scikit-learn.org), [LightGBM](https://github.com/microsoft/LightGBM), [CatBoost](https://catboost.ai), [XGBoost](https://xgboost.ai), [PyTorch](https://pytorch.org), [TensorFlow](https://tensorflow.org)  
-    - **Model registries:** [MLflow](https://mlflow.org), [Comet ML](https://comet.com), [Weights & Biases](https://wandb.ai)  
+    - **Model frameworks:** [![scikit-learn](https://img.shields.io/badge/scikit--learn-007ACC?logo=scikit-learn&logoColor=white)](https://scikit-learn.org) [![LightGBM](https://img.shields.io/badge/lightgbm-00C1D4?logo=lightgbm&logoColor=white)](https://lightgbm.ai/) [![CatBoost](https://img.shields.io/badge/CatBoost-130C0E?logo=catboost&logoColor=white)](https://catboost.ai/) [![XGBoost](https://img.shields.io/badge/XGBoost-FF6E00?logo=xgboost&logoColor=white)](https://xgboost.ai/) [![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?logo=pytorch&logoColor=white)](https://pytorch.org/) [![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?logo=tensorflow&logoColor=white)](https://tensorflow.org/)
+    - **Model registries:** [![MLflow](https://img.shields.io/badge/MLflow-00B0FF?logo=mlflow&logoColor=white)](https://mlflow.org/) [![Comet ML](https://img.shields.io/badge/Comet_ML-1E88E5?logo=comet&logoColor=white)](https://comet.ml/) [![Weights & Biases](https://img.shields.io/badge/Weights_%26_Biases-FF5C8A?logo=wandb&logoColor=white)](https://wandb.ai/)
 
 2. **AI‑Assisted Domain Creation**  
     - Draft your **domain YAML** (variables, constraints, rules) automatically from sample data and documents  
@@ -203,7 +208,7 @@ report.save_as_html("verification_report.html")
 | License        | Description                                                                                                                    |
 | -------------- | ------------------------------------------------------------------------------------------------------------------------------ |
 | **AGPL‑3.0**   | Community‑driven, OSI‑approved open‑source license                                                                             |
-| **Enterprise** | Commercial license for proprietary integration (no AGPL obligations). Mail to [contact@verifia.ai](mailto:contact@verifia.ai). |
+| **Enterprise** | Commercial license for proprietary integration (no AGPL obligations). Mail to [contact@verifia.ca](mailto:contact@verifia.ca). |
 
 
 We champion open source by returning all improvements back to the community ❤️. Your contributions help advance the field for everyone.

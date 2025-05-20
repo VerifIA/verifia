@@ -19,7 +19,7 @@ We value the insights of our enterprise users and want to learn how *VerifIA* fi
 
 ## How to Connect
 
-If you’re an enterprise user and would like to share your experience, please email us at **contact@verifia.ai** with:
+If you’re an enterprise user and would like to share your experience, please email us at **contact@verifia.ca** with:
 
 - **Company name**  
 - **How you’re using VerifIA** (e.g. “verifying credit‑scoring models” or “auditing production classifiers”)  
